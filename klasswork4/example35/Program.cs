@@ -4,8 +4,9 @@
 int[] array = new int[123];
 int count = 0;
 FillArray(array);
-FindCount(array, count);
-Console.WriteLine(count);
+//PrintArray(array);
+int c = FindCount(array, count);
+Console.WriteLine(c);
 
 int FindCount(int[] array, int count)
 {
@@ -22,6 +23,20 @@ void FillArray(int[] array)
     Random rand = new Random();
     for (int i = 0; i < 123; i++)
     {
-    array[i] = rand.Next(10, 20);
+    array[i] = rand.Next(0, 200);
     }
 }
+
+/*void PrintArray(int[] array) 
+{
+    int count = array.Length;
+    Console.Write("[");
+    for (int i = 0; i < count; i++)
+    {
+        Console.Write(array[i]);
+        if (i == count - 1)
+            Console.WriteLine("]");
+        else
+            Console.Write(", ");
+    }
+}*/

@@ -1,4 +1,5 @@
-﻿/*Замена элементов массива: положительные элементы заменить на отриц-ные и наоборот
+﻿/*Задача 32
+Замена элементов массива: положительные элементы заменить на отриц-ные и наоборот
 [-4, -8, 8, 2] -> [4, 8, -8, -2]*/
 
 Console.Clear();
@@ -9,7 +10,7 @@ PrintArray(array);
 ChangeArray(array);
 PrintArray(array);
 
-int CreateArray(int[] array)
+int[] CreateArray()
 {
     int[] array = {-4, -8, 8, 2};
     return array;
@@ -31,7 +32,7 @@ void PrintArray(int[] array)
 
 void ChangeArray(int[] array)
 {
-    for (int i = 0; i < arrayLength; i++)
+    for (int i = 0; i < array.Length; i++)
     {
     array[i] = -array[i];
     }
