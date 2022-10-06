@@ -7,18 +7,20 @@
 - Внутри функций (кроме функции вывода) НЕЛЬЗЯ использовать класс Console. 
 Только в основном блоке кода или в функции вывода*/
 
-int[] array = new int[8];
-FillArray(array);
-PrintArray(array);
+int size = 8;
+int[] nums = CreateArray(size);
 
+PrintArray(nums);
 
-void FillArray(int[] array) 
+int[] CreateArray(int size)
 {
+    nums = new int[size];
     Random rand = new Random();
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < nums.Length; i++)
     {
-    array[i] = rand.Next();
+    nums[i] = rand.Next();
     }
+    return nums;
 }
 
 void PrintArray(int[] array) 
