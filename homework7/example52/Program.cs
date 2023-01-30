@@ -16,9 +16,9 @@ int[,] array = new int[m, n];
 FillArray(array);
 PrintArray(array);
 
-double avarage = 0;
-for (int j = 0; j < array.GetLength(1); j++)
+double avarage = 0;nt j = 0; j < array.GetLength(1); j++)
 {
+for (i
     for (int i = 0; i < array.GetLength(0); i++)
     {
         avarage += array[i, j];
